@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Work Hours – Paid Time Tracker for iPhone &amp; iPad</title>
+  <meta name="description" content="Work Hours is a simple time clock and timesheet for hourly and shift workers. Check in with one tap, track breaks and overtime, see your pay live and export timesheets to PDF, Excel or CSV.">
+  <meta name="theme-color" content="#f7811f">
+  <meta property="og:title" content="Work Hours – Paid Time Tracker">
+  <meta property="og:description" content="Check in with one tap, watch your pay grow live and let overtime calculate itself.">
+  <meta property="og:image" content="assets/icon-1024.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><img src="assets/icon.png" alt="">Work Hours</a>
+    <nav class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-sm" href="https://apps.apple.com/app/id6833078923">Download</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Timesheet &amp; Salary Calculator</div>
+        <h1>Know exactly what you worked <span>and what you earned.</span></h1>
+        <p class="lead">Work Hours is a simple time clock for hourly and shift workers, part-timers and freelancers. Check in with one tap, add your breaks, and watch your hours and pay update live — overtime included.</p>
+        <div class="hero-cta">
+          <a class="appstore" href="https://apps.apple.com/app/id6833078923" aria-label="Download on the App Store">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.62c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.77-3.32-1.8-1.41-.14-2.76.83-3.47.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.28-1.6 2.78-.41 6.9 1.15 9.16.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.65zM14.1 5.86c.63-.77 1.06-1.83.94-2.89-.91.04-2.02.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.05-.52 2.69-1.28z"/></svg>
+            <span><small>Download on the</small><strong>App Store</strong></span>
+          </a>
+          <a class="btn btn-ghost" href="#features">See features</a>
+        </div>
+        <div class="hero-note"><span>No account needed</span><span>Synced with iCloud</span><span>22 languages</span></div>
+      </div>
+
+      <div class="phone-wrap" aria-hidden="true">
+        <div class="phone">
+          <div class="screen">
+            <div class="notch"></div>
+            <div class="screen-body">
+              <div class="screen-title">Today</div>
+              <div class="card">
+                <div class="status">Checked in · Café Shift</div>
+                <div class="timer" id="timer">06:42:18</div>
+                <div class="pay" id="pay">$121.03 earned</div>
+                <div class="mock-btns"><span class="out">Check out</span><span class="brk">Start break</span></div>
+              </div>
+              <div class="card">
+                <div class="row"><div><b>Monday</b><div class="sub">9:00 – 17:30 · 30m break</div></div><div class="amt"><b>8h 00m</b><div class="sub">$144.00</div></div></div>
+                <div class="row"><div><b>Tuesday</b><div class="sub">8:30 – 19:00 · 30m break</div></div><div class="amt"><b>10h 00m</b><div class="ot">+2h overtime</div></div></div>
+                <div class="row"><div><b>Wednesday</b><div class="sub">10:00 – 16:00</div></div><div class="amt"><b>6h 00m</b><div class="sub">$108.00</div></div></div>
+                <div class="row"><div><b>This week</b><div class="sub">3 days worked</div></div><div class="amt"><b class="pay">$450.00</b></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Everything you need, nothing you don't</h2>
+        <p>Built for people who get paid by the hour, so tracking your time takes seconds, not minutes.</p>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3>One-tap time clock</h3>
+          <p>Check in and out with a single tap. A live timer shows how long you've worked, and several shifts in a day are no problem.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <h3>Pay calculated for you</h3>
+          <p>Set your hourly rate and currency, and watch your earnings grow live while you work. Change the rate for a single day when you need to.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+          <h3>Automatic overtime</h3>
+          <p>Choose when overtime starts and at what rate. Work Hours does the maths and highlights overtime in every report.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M17 8h1a4 4 0 0 1 0 8h-1M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg></div>
+          <h3>Breaks that count</h3>
+          <p>Start and end breaks as you take them, or add them later. Unpaid breaks are automatically taken off your total.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+          <h3>Easy timesheet</h3>
+          <p>See this week, the last 7, 15 or 30 days, any month or a custom range. Tap a time to fix it, add missed shifts or leave a note.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15v2M11 11v6M15 7v10M19 12v5"/></svg></div>
+          <h3>Reports &amp; charts</h3>
+          <p>Reports by day, week, month, year or custom dates, with total pay, hours, days worked and your daily average.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></div>
+          <h3>Smart reminders</h3>
+          <p>Get a gentle nudge to check in and check out. Pick the times and days for each job so you never forget.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
+          <h3>Multiple jobs</h3>
+          <p>Track several jobs or projects, each with its own rate and overtime rules. Switch between them in one tap.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"/></svg></div>
+          <h3>Synced with iCloud</h3>
+          <p>Your hours are saved in your own iCloud and kept the same on your iPhone and iPad — no sign-up required.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how">
+    <div class="container">
+      <div class="section-head">
+        <h2>Up and running in a minute</h2>
+        <p>No accounts, no setup headaches. Just add a job and start the clock.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>Add your job</h3>
+          <p>Enter a name, your hourly rate and currency. Turn on overtime if you get paid extra after a set number of hours.</p>
+        </div>
+        <div class="step">
+          <h3>Check in &amp; out</h3>
+          <p>Tap once when you start and once when you finish. Add breaks as you go — your pay updates in real time.</p>
+        </div>
+        <div class="step">
+          <h3>Export &amp; share</h3>
+          <p>At the end of the week or month, export a clean timesheet and send it to your employer or keep it for your records.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Export -->
+  <section class="section-alt">
+    <div class="container split">
+      <div>
+        <h2>Timesheets ready in seconds</h2>
+        <p style="color: var(--muted)">Export any period as a professional timesheet, ready to send to your employer, your accountant or your clients.</p>
+        <ul class="checklist">
+          <li>Choose day, week, month, year or custom dates</li>
+          <li>Include breaks and notes — or leave them out</li>
+          <li>List each shift on its own row when you need the detail</li>
+          <li>Totals for hours, overtime and pay at the bottom</li>
+        </ul>
+      </div>
+      <div class="formats">
+        <div class="format"><b>PDF</b><span>Print-ready</span></div>
+        <div class="format"><b>XLSX</b><span>Excel</span></div>
+        <div class="format"><b>CSV</b><span>Any app</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Languages -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <h2>Speaks your language</h2>
+        <p>Work Hours is available in 22 languages, with light and dark mode and the week start day of your choice.</p>
+      </div>
+      <div class="langs">
+        <span>English</span><span>العربية</span><span>Deutsch</span><span>Español</span><span>Español (México)</span>
+        <span>Filipino</span><span>Français</span><span>हिन्दी</span><span>Bahasa Indonesia</span><span>Italiano</span>
+        <span>日本語</span><span>한국어</span><span>Polski</span><span>Português (Brasil)</span><span>Português (Portugal)</span>
+        <span>Русский</span><span>ไทย</span><span>Türkçe</span><span>Українська</span><span>اردو</span><span>Tiếng Việt</span><span>简体中文</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Do I need to create an account?</summary>
+          <p>No. Work Hours works straight away without any sign-up. Your hours are stored on your device and synced through your own iCloud account.</p>
+        </details>
+        <details>
+          <summary>Where is my data stored?</summary>
+          <p>Your jobs, shifts, breaks and notes are saved on your device and in your personal iCloud, so they stay in sync between your iPhone and iPad. We don't keep a copy of your timesheets on our servers.</p>
+        </details>
+        <details>
+          <summary>How is overtime calculated?</summary>
+          <p>For each job you choose how many hours a day are paid at your normal rate. Any time worked beyond that is paid at the overtime rate you set, and it's shown separately in your timesheet and reports.</p>
+        </details>
+        <details>
+          <summary>Can I track more than one job?</summary>
+          <p>Yes. Add as many jobs or projects as you like, each with its own hourly rate, currency and overtime rules, and switch between them in one tap.</p>
+        </details>
+        <details>
+          <summary>I forgot to check in. Can I add a shift later?</summary>
+          <p>Of course. Open any day to add a shift or break, or tap an existing time to correct it. Your hours and pay are recalculated instantly.</p>
+        </details>
+        <details>
+          <summary>What formats can I export?</summary>
+          <p>You can export timesheets as PDF, Excel (XLSX) or CSV, and choose whether to include breaks, notes and individual shift rows.</p>
+        </details>
+        <details>
+          <summary>How do I get help?</summary>
+          <p>Email us at <a href="mailto:support@replykitapp.com?subject=Work%20Hours%20support">support@replykitapp.com</a> or use Contact Us in the app's Settings. We're happy to help.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="container">
+      <div class="cta">
+        <img src="assets/icon.png" alt="Work Hours app icon">
+        <h2>Start tracking your hours today</h2>
+        <p>Free to download on iPhone and iPad.</p>
+        <a class="appstore" href="https://apps.apple.com/app/id6833078923" aria-label="Download on the App Store">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.62c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.77-3.32-1.8-1.41-.14-2.76.83-3.47.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.28-1.6 2.78-.41 6.9 1.15 9.16.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.65zM14.1 5.86c.63-.77 1.06-1.83.94-2.89-.91.04-2.02.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.05-.52 2.69-1.28z"/></svg>
+          <span><small>Download on the</small><strong>App Store</strong></span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <a class="brand" href="index.html"><img src="assets/icon.png" alt="">Work Hours</a>
+    <nav class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="mailto:support@replykitapp.com?subject=Work%20Hours%20support">Contact</a>
+    </nav>
+    <div>© <span class="year">2026</span> Work Hours. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  // Live timer and pay in the phone mockup
+  (function () {
+    var start = Date.now() - (6 * 3600 + 42 * 60 + 18) * 1000;
+    var rate = 18;
+    var timer = document.getElementById('timer');
+    var pay = document.getElementById('pay');
+    function pad(n) { return String(n).padStart(2, '0'); }
+    function tick() {
+      var s = Math.floor((Date.now() - start) / 1000);
+      timer.textContent = pad(Math.floor(s / 3600)) + ':' + pad(Math.floor(s / 60) % 60) + ':' + pad(s % 60);
+      pay.textContent = '$' + (s / 3600 * rate).toFixed(2) + ' earned';
+    }
+    tick();
+    setInterval(tick, 1000);
+    document.querySelectorAll('.year').forEach(function (el) { el.textContent = new Date().getFullYear(); });
+  })();
+</script>
+</body>
+</html>
